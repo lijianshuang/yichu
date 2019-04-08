@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>chact</title>
+    <link rel="stylesheet" href="./css/chact.css" />
+    <link rel="stylesheet" href="./css/iconfont-back.css" />
+    <link rel="stylesheet" href="./css/public.css" />
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px'
+    </script>
+  </head>
+
+  <body>
+    <div class="warp">
+      <header>
+        <a href="./xiaoxi.html"><span class="iconfont icon-huitui"></span></a>
+        <h3>yaourtniyun</h3>
+        <a class="del" href="#">···</a>
+      </header>
+      <section>
+        <div class="main-content">
+          <div class="text">
+            <img src="./images/xiaoxi/消息-聊天3_03.png" alt="" />
+            <p>
+              我喜欢了一姑娘4年
+              他现在有对象我应不应该打破她现有的平稳生活去追求她
+            </p>
+          </div>
+          <ul>
+            <li>
+              <p>
+                哎，你暗恋了人家四年，人家完全没意识到（或没在意），所以才找了个对象...
+              </p>
+              <img src="./images/xiaoxi/个人页_05.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        <input type="text" placeholder="新信息" />
+        <a href="#">发 送</a>
+      </footer>
+    </div>
+    <div class="warp2 show">
+      <header></header>
+      <footer>
+        <div>加为好友</div>
+        <div>举报该人</div>
+        <div>加入黑名单</div>
+        <div class="cancel">取消</div>
+      </footer>
+    </div>
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/zepto.touch.js"></script>
+    <script>
+      $('footer a').tap(function() {
+        var text = $('footer input').val()
+        if (text.trim() != '') {
+          var li = $('<li>')
+          li.html(
+            `<p>${text}</p>
+            <img src="./images/xiaoxi/个人页_05.png" alt="" />`
+          )
+          $('ul').append(li)
+          $('footer input').val('')
+        }
+      })
+      $('.warp>header>.del').tap(function() {
+        $('.warp2').removeClass('show')
+      })
+      $('.warp2 footer>.cancel').tap(function() {
+        $('.warp2').addClass('show')
+      })
+    </script>
+  </body>
+</html>

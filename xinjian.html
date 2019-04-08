@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>新建</title>
+    <link rel="stylesheet" href="./css/xinjian.css" />
+    <link rel="stylesheet" href="./css/iconfont-back.css" />
+    <link rel="stylesheet" href="./css/public.css" />
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px'
+    </script>
+  </head>
+
+  <body>
+    <div class="warp">
+      <header>
+        <a href="./homepage.html"><span class="iconfont icon-huitui"></span></a>
+        <div>
+          <div class="btn1">公开发布</div>
+
+          <div class="btn2 active">匿名发布</div>
+        </div>
+      </header>
+      <section>
+        <div class="main-content">
+          <img src="./images/u26_03.jpg" alt="" />
+          <textarea name="" id="" cols="30" rows="10"> </textarea>
+          <div class="btn3">公开</div>
+
+          <div class="btn4 active">悄悄话</div>
+        </div>
+      </section>
+      <footer>
+        <input type="text" placeholder="请输入文字" />
+        <a href="#">提交</a>
+      </footer>
+    </div>
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/zepto.touch.js"></script>
+    <script>
+      $('.btn1').tap(function() {
+        $(this).css('display', 'none')
+        $('.btn2').css('display', 'block')
+        $('.btn3').css('display', 'none')
+        $('.btn4').css('display', 'block')
+      })
+      $('.btn2').tap(function() {
+        $(this).css('display', 'none')
+        $('.btn1').css('display', 'block')
+        $('.btn4').css('display', 'none')
+        $('.btn3').css('display', 'block')
+      })
+      $('.btn3').tap(function() {
+        $(this).css('display', 'none')
+        $('.btn4').css('display', 'block')
+        $('.btn1').css('display', 'none')
+        $('.btn2').css('display', 'block')
+      })
+      $('.btn4').tap(function() {
+        $(this).css('display', 'none')
+        $('.btn3').css('display', 'block')
+        $('.btn2').css('display', 'none')
+        $('.btn1').css('display', 'block')
+      })
+
+      $('textarea').html(
+        '学习学到忘记看手机，这种感觉超爽，拿起手机 发现时间才过了2分钟，惆怅···'
+      )
+      $('footer a').tap(function() {
+        var text = $('footer input').val()
+        if (text.trim() != '') {
+          $('textarea').html(text)
+        }
+        $('footer input').val('')
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>排行榜</title>
+    <link rel="stylesheet" href="./css/paihangbang.css" />
+    <link rel="stylesheet" href="./css/iconfont-back.css" />
+    <link rel="stylesheet" href="./css/iconfont-phb.css" />
+    <link rel="stylesheet" href="./css/public.css" />
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px'
+    </script>
+  </head>
+
+  <body>
+    <div class="warp">
+      <header>
+        <a href="./homepage.html"><span class="iconfont icon-huitui"></span></a>
+        <h3 class="btn1 active">榜单</h3>
+        <h3 class="btn2">小时榜</h3>
+      </header>
+      <section>
+        <div class="main-content">
+          <article>
+            <div class="head">
+              <img src="./images/phb-head01_03.jpg" alt="" />
+              <h4>万能的尤老师</h4>
+              <span>推荐话题：一处精选</span>
+            </div>
+            <p>什么歌陪你度过低落的时期，说说你当时的故事</p>
+            <div class="footer">
+              <img src="./images/phb2-1_03.jpg" alt="" />
+              <span>回答 384</span>
+            </div>
+          </article>
+          <article>
+            <div class="head">
+              <img src="./images/phb-head03_07.jpg" alt="" />
+              <h4>解说小米</h4>
+              <span>推荐话题：一处精选</span>
+            </div>
+            <p>什么歌陪你度过低落的时期，说说你当时的故事</p>
+            <div class="footer">
+              <span class="iconfont icon-pinglun2">评论</span>
+              <span>回答 384</span>
+            </div>
+          </article>
+          <article>
+            <div class="head">
+              <img src="./images/phb-head2_07.jpg" alt="" />
+              <h4>解说小米</h4>
+              <span>推荐话题：一处精选</span>
+            </div>
+            <p>什么歌陪你度过低落的时期，说说你当时的故事</p>
+            <div class="footer">
+              <span class="iconfont icon-pinglun2">评论</span>
+              <span>回答 384</span>
+            </div>
+          </article>
+          <article>
+            <div class="head">
+              <img src="./images/phb-head2_07.jpg" alt="" />
+              <h4>解说小米</h4>
+              <span>推荐话题：一处精选</span>
+            </div>
+            <p>什么歌陪你度过低落的时期，说说你当时的故事</p>
+            <div class="footer">
+              <span class="iconfont icon-pinglun2">评论</span>
+              <span>回答 384</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/zepto.touch.js"></script>
+    <script>
+      $('.btn1').tap(function() {
+        $(this)
+          .addClass('active')
+          .next()
+          .removeClass('active')
+      })
+      $('.btn2').tap(function() {
+        $(this)
+          .addClass('active')
+          .prev()
+          .removeClass('active')
+      })
+    </script>
+  </body>
+</html>

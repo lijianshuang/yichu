@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>音乐</title>
+    <link rel="stylesheet" href="./css/yinyue.css" />
+    <link rel="stylesheet" href="./css/iconfont-back.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/public.css" />
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px'
+    </script>
+  </head>
+
+  <body>
+    <div class="warp">
+      <header>
+        <a href="./homepage.html"><span class="iconfont icon-huitui"></span></a>
+        <h3>音乐</h3>
+      </header>
+      <section>
+        <div class="main-content">
+          <div class="yinyuepindao">
+            <div class="yinyuepindao-up title">
+              <span>音乐频道</span>
+              <a href="./yinyuepindao.html">···</a>
+            </div>
+            <div class="yinyuepindao-down swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/yinyue/yinyue1_03.jpg" alt="" />
+
+                  <img src="./images/yinyue/yinyue2_03.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/yinyue/yinyue3_03.jpg" alt="" />
+
+                  <img src="./images/yinyue/yinyue4_03.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/yinyue/yinyue5_03.jpg" alt="" />
+
+                  <img src="./images/yinyue/yinyue6_03.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="remenfenxiang">
+            <div class="remenfenxiang-up title">
+              <span>热门分享</span>
+              <a href="./remenfenxiang.html">···</a>
+            </div>
+            <div class="remenfenxiang-down swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/yinyue/yinyue2-1_03.jpg" alt="" />
+                  <h4>心之所向，无往不至</h4>
+                  <p>分享:许翎</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/yinyue/yinyue2-2_03_03.jpg" alt="" />
+                  <h4>心之所向，无往不至</h4>
+                  <p>分享:许翎</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/yinyue/yinyue2-1_03.jpg" alt="" />
+                  <h4>心之所向，无往不至</h4>
+                  <p>分享:许翎</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="zazhi">
+            <div class="zazhi-up title">
+              <span>音乐杂志</span>
+              <a href="#">···</a>
+            </div>
+            <div class="zazhi-down">
+              <div class="zazhi-pic">
+                <img src="./images/yinyue/yinyue3-1_07.jpg" alt="" />
+                <img src="./images/yinyue/yinyue3-2_07.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper('.yinyuepindao-down', {
+        slidesPerView: 3,
+        spaceBetween: 10
+        // freeMode: true
+      })
+      $('.swiper-slide').css('width', '2.7rem')
+
+      //remenfenxiang-down
+
+      var swiper1 = new Swiper('.remenfenxiang-down', {
+        slidesPerView: 3,
+        spaceBetween: 10
+        // freeMode: true
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.warp {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+}
+header span {
+  display: block;
+}
+header .time .time1 {
+  font-size: 0.16rem;
+  color: #d6fbf3;
+  display: block;
+}
+header .time .hour,
+header .time .minute {
+  font-size: 0.16rem;
+  color: #2f413d;
+}
+header .time > div {
+  font-size: 0.14rem;
+  display: flex;
+  justify-content: space-around;
+}
+header .logo {
+  margin-left: -0.7rem;
+}
+header .logo h3 {
+  font-size: 0.2rem;
+  color: white;
+  text-align: center;
+}
+header .logo span {
+  font-size: 0.08rem;
+  color: #02785e;
+}
+header .search a {
+  display: block;
+  width: 100%;
+}
+section {
+  overflow: scroll;
+  flex-grow: 1;
+}
+footer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  /* position: fixed;
+  bottom: 0; */
+}
+footer img {
+  width: 0.4rem;
+}
+footer .plus img {
+  width: 0.6rem;
+}
+footer span {
+  display: block;
+}
+
+section .main-content .banner img {
+  display: block;
+  width: 100%;
+}
+section .main-content .media {
+  margin: 0.2rem;
+  justify-content: space-around;
+  display: flex;
+  box-shadow: 0 1px 2px 2px #e8e8e8 inset;
+  padding: 0.4rem;
+}
+section .main-content .media span.iconfont {
+  font-size: 0.5rem;
+  display: block;
+  color: #a3a3a3;
+}
+section .main-content .media span.icon-wenben,
+section .main-content .media span.icon-appstorebangdan {
+  font-size: 0.4rem;
+}
+section .main-content .media span.icon-yinyue {
+  color: #54d2ba;
+}
+section .main-content .text {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+section .text > article {
+  background-color: #fff;
+}
+section .text > a.article {
+  display: block;
+}
+section .text > article:first-child {
+  margin-bottom: 0.3rem;
+}
+
+section .main-content .text article {
+  padding: 0.4rem;
+}
+section .main-content .text article .acticle-up {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.5rem;
+}
+section .main-content .text article .acticle-up span {
+  font-size: 0.16rem;
+  display: block;
+}
+section .main-content .text article .acticle-up span:first-child {
+  padding-left: 0.1rem;
+  border-left: 1px solid #54d2ba;
+  color: #54d2ba;
+}
+section .main-content .text article .acticle-up span:last-child {
+  color: #202020;
+  padding-right: 0.6rem;
+  background: url('../../images/Login/article01.jpg') right center no-repeat;
+  background-size: contain;
+}
+section .main-content .text article .article-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+}
+section .main-content .text article .article-main .article-text {
+  margin-right: 0.2rem;
+}
+section .main-content .text article .article-main h4 {
+  display: block;
+  font-size: 0.35rem;
+  color: #202020;
+  margin-bottom: 0.1rem;
+}
+section .main-content .text article .article-main p {
+  display: block;
+  font-size: 0.25rem;
+  color: #6b6b6b;
+}
+section .main-content .text article .article-main img {
+  width: 3rem;
+}
+section .main-content .text article .arcitle-down {
+  display: flex;
+  justify-content: space-between;
+}
+section .main-content .text article .arcitle-down > div {
+  line-height: 0.2rem;
+}
+section .main-content .text article .arcitle-down > div:first-child span {
+  display: block;
+  font-size: 0.2rem;
+  color: #bbbbbb;
+}
+section .main-content .text article .arcitle-down > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  color: #a4a4a4;
+}
+section .main-content .text article .arcitle-down > div:last-child span {
+  /* line-height: 0.2rem; */
+  display: block;
+  font-size: 0.2rem;
+  margin-right: 0.1rem;
+}

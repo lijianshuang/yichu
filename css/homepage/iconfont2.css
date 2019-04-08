@@ -1,0 +1,29 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1554340811187'); /* IE9 */
+  src: url('iconfont.eot?t=1554340811187#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAR8AAsAAAAACPAAAAQwAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqFNIRbATYCJAMQCwoABCAFhG0HPxvEB8gOJYnAiMDgIUBGPPy3xu++mVn5pkkFklYRzyYl0Ih4KVROJ0SVioe+0/+mPkIV6jBxKu6pOKSiNIWIHqEuE7V0JhKZiHztd/3j3umvbV1g89m3XMZcNtbEMIwDCmiMzV2ehkMYG8YuL/I0gV4zAkD7svJJYKPQJwXirkxCA5uEXqmghlZVF6wsELQEWGrTXME9PPB+H/9sCRsgqTLQZ566ntkEUn5O+y2E+yb61DgIEAxnBVtHxmZAIW4W2i+Dg+BmsF453sIOQGt8kvg57WfLN+FEh4RbkbfoL4+QJaIGurwfEbZpswMTWCjBzxaUzG+hXoK4Mr5FH74DsRkQpmYUWZl1cbZzdYVCbPVXU8ynjAX3jakr8UuG/HukYZ7IVPjAlLZqylVz0cNyc7nhHbmib5LxPWX+WL66f7LpAzn/9vnDfYfO3Zp358KR/qMX7wa/N5BGI2U2l5tMneYdIhO545TH5AsmZB5pMFBbjYnnjdTK4+h8/0qpOX1HwtN5k9knIpO56C463+j7bCe6evcU/3Hvs+gA84xkp8OxRzPTxseRA9TK+ZM9U7QKsdulnw6vH0cd5+8Fgnt7PJB5K/pWoujJp3Pypifavr3zx/v18/ZQa30ZbfMKZk3sPJyJp2PGo2JxLobnOpqjxoQ7E1+WQ8GxXkKfbQKrbYW9ihkKm+O32CaIj9kxR6RnE1m9KMnL/VYCKZRQMVTi6EugiGNLiuH7gpRRIcbvma+EUkDKXPWG2tTTMt+YwmzfktDC3Q71K0IrMw8eETcJhffsnD1O5+Q+fFJYIldvjKlt+PiFotDm6vqJvgI0K67bUJjoX0T8/6+3f3fJ7dpA582I81CX3I500hWVgajFqOvaTOtnTaZ27P49FnuNXd/nGciykHXws7wOv44/x59ZJSF1yKvxH0hdo+DCHFzvY1ieYtmRroMufSiWNQPt0zgjver+dcfLZDgfgO5uvpyj/phR7uc7L+odE/616BPzfL7bdderaS547QJZ8H9oi2UF8lesiHRDKZJMpbI0DylO6N2f0Gu46ZB71JshlBOyn9AmBAySxjRkrSVMIWyGSp9tUGvthF6bZK/vM4YDi2IL2DAMIAw7CMmgl5ANu48phNdQmfQbasMBQ68Lge3YZyVkSDrH0DzTRDS2EzKxRs2aJh7xM0sZSbOS5uIijyZiOJ3MQ4QGhaQj2Yya4YaYo2uRhPE8S7CcRkVkgfMYpVJDaDmNnBHzQVKe18YFB7NFDwoSa1QAsReHQeMxmhAatSPIiGmosU57HpL5fimGRDMlGlfRUGYXYXB0ZN0TQgUJaYDJlqsbNVxKf50WEmF4PBaPY3E0VAhZ0MpQGkENgrZ4mBxDjBdE2sGvFScYNWObyoOmV6rucAf00ncsIYBgyAKyBPUVKa2g1XCbTG1lkWmNDgA=') format('woff2'),
+  url('iconfont.woff?t=1554340811187') format('woff'),
+  url('iconfont.ttf?t=1554340811187') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1554340811187#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chakan:before {
+  content: "\e619";
+}
+
+.icon-xin:before {
+  content: "\e848";
+}
+
+.icon-xiaoxi:before {
+  content: "\e676";
+}
+

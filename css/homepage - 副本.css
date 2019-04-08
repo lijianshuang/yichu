@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.warp {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+}
+header span {
+  display: block;
+}
+header .time .time1 {
+  font-size: 0.16rem;
+  color: #d6fbf3;
+  display: block;
+}
+header .time .hour,
+header .time .minute {
+  font-size: 0.16rem;
+  color: #2f413d;
+}
+header .time > div {
+  font-size: 0.14rem;
+  display: flex;
+  justify-content: space-around;
+}
+header .logo h3 {
+  font-size: 0.2rem;
+  color: white;
+  text-align: center;
+}
+header .logo span {
+  font-size: 0.1rem;
+  color: #02785e;
+}
+header .search a {
+  display: block;
+  width: 100%;
+}
+section {
+  overflow: scroll;
+  flex-grow: 1;
+}
+footer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  /* position: fixed;
+  bottom: 0; */
+}
+footer img {
+  width: 0.4rem;
+}
+footer .plus img {
+  width: 0.6rem;
+}
+footer span {
+  display: block;
+}

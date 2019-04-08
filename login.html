@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/login/iconfont.css" />
+    <link rel="stylesheet" href="./css/public.css" />
+    <title>Login</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px'
+    </script>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+      }
+      li {
+        list-style-type: none;
+      }
+      .wrap {
+        width: 7.5rem;
+        /* height: 100%; */
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background: url('./images/Login/Login-bg1.jpg');
+        background-size: cover;
+      }
+      header {
+        /* width: 7.5rem; */
+        padding: 0.6rem 0.5rem 0;
+        display: flex;
+        justify-content: space-between;
+        line-height: 0.5rem;
+      }
+      header a:first-child img {
+        width: 0.4rem;
+        line-height: 0.4rem;
+      }
+      header a:last-child {
+        margin-top: 0.1rem;
+        font-size: 0.3rem;
+        line-height: 0.4rem;
+        color: #b3e9e6;
+      }
+
+      section {
+        width: 4.5rem;
+        margin: 4rem auto 0;
+        overflow: hidden;
+      }
+      section span {
+        color: #d7f5f5;
+      }
+      section input {
+        outline: none;
+        border: none;
+        background: none;
+        border-bottom: 1px solid #ace6e8;
+        /* color: #e4f4f4; */
+      }
+      section ::-webkit-input-placeholder {
+        color: #e4f4f4;
+        font-size: 0.16rem;
+      }
+      section .user,
+      section .password {
+        margin-top: 0.6rem;
+        display: flex;
+        flex-wrap: nowrap;
+        /* width: 100%; */
+      }
+      section > div > span.iconfont {
+        /* font-size: 0.2rem; */
+        font-size: 0.3rem;
+        margin-right: 0.2rem;
+      }
+      section .user > input,
+      section .password > input {
+        width: calc(100% - 0.5rem);
+      }
+
+      section a {
+        display: block;
+      }
+      section > div:nth-child(3) {
+        width: 100%;
+        padding: 3px;
+        border: 1px solid white;
+        border-radius: 20px;
+        margin-top: 0.8rem;
+      }
+      section > div:nth-child(3) a {
+        /* width: calc(100% - 6px); */
+        line-height: 0.7rem;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.4);
+        color: white;
+        border-radius: 20px;
+        font-size: 0.4rem;
+      }
+      section > a:last-child {
+        font-size: 0.3rem;
+        color: #a3dbda;
+        text-align: center;
+        line-height: 1rem;
+      }
+
+      footer {
+        width: 4.5rem;
+        margin: 1rem auto 0;
+        display: flex;
+        justify-content: space-around;
+      }
+      footer > a {
+        color: white;
+        width: 1rem;
+        height: 1rem;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid #fff;
+      }
+      footer > a span.iconfont {
+        display: block;
+        line-height: 1rem;
+        font-size: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <a href="#"><img src="./images/Login/xxx_03.png" alt=""/></a>
+        <a href="#">找回密码</a>
+      </header>
+      <section>
+        <div class="user">
+          <span class="iconfont icon-user"></span>
+          <input type="text" id="user" placeholder="请输入邮箱地址/手机号" />
+        </div>
+        <div class="password">
+          <span class="iconfont icon-password"></span>
+          <input type="text" id="password" placeholder="请输入密码" />
+        </div>
+        <div>
+          <a href="./homepage.html">登录</a>
+        </div>
+        <a href="#">用户注册</a>
+      </section>
+      <footer>
+        <a href="#"><span class="iconfont icon-xinlang"></span></a>
+
+        <a href="#"><span class="iconfont icon-iconfontweixin"></span></a>
+
+        <a href="#"><span class="iconfont icon-qq"></span></a>
+      </footer>
+    </div>
+  </body>
+</html>

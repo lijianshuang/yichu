@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.warp {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  background: url('../images/Login/u48.png');
+  background-size: cover;
+  height: 1.3rem;
+  padding: 0.4rem 1.6rem 0.4rem;
+  color: #00775d;
+}
+header h4 {
+  font-size: 0.25rem;
+  text-align: center;
+}
+header span {
+  font-size: 0.16rem;
+  display: block;
+}
+header .active {
+  color: white;
+}
+/* section */
+section {
+  overflow: scroll;
+  flex-grow: 1;
+  position: relative;
+}
+section .show {
+  display: none;
+}
+section .main-content1 {
+  background-color: #f5f5f5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+section .main-content2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section .main-content1 article {
+  padding: 0.4rem;
+  background-color: #fff;
+  margin-bottom: 0.2rem;
+}
+section .main-content1 article:last-child {
+  margin-bottom: 0;
+}
+section .main-content1 .title {
+  font-size: 0.3rem;
+  /* padding: 0.3rem 0; */
+  margin-bottom: 0.3rem;
+  color: #9b9b9b;
+}
+section .main-content1 .article-text {
+  display: flex;
+}
+section .main-content1 .text-left {
+  margin-right: 0.3rem;
+}
+section .main-content1 .article-text img {
+  width: 1.6rem;
+}
+section .main-content1 .article-text h3 {
+  font-size: 0.3rem;
+  color: #202020;
+  margin-bottom: 0.1rem;
+}
+section .main-content1 .article-text p {
+  font-size: 0.25rem;
+  color: #afafaf;
+  margin-bottom: 0.5rem;
+}
+section .main-content1 .article-text h4 {
+  font-size: 0.25rem;
+  color: #d9d9d9;
+  margin-bottom: 0.1rem;
+}
+section .main-content1 .article-text span {
+  display: block;
+  font-size: 0.25rem;
+  color: #9b9b9b;
+}
+section .main-content1 article + article .title {
+  display: flex;
+  justify-content: space-between;
+}
+section .main-content1 article + article .title a {
+  color: #9b9b9b;
+  border-bottom: 1px solid #d9d9d9;
+}
+section .main-content1 article .swiper-container .swiper-slide {
+  width: 2rem;
+}
+section .main-content1 article .swiper-container .swiper-slide img {
+  width: 100%;
+}
+section .main-content1 article .swiper-container .swiper-slide h5 {
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 0.3rem;
+}
+section .main-content1 article .swiper-container .swiper-slide p {
+  text-align: center;
+  font-size: 0.25rem;
+  color: #9b9b9b;
+  margin-top: 0.1rem;
+}
+section .main-content1 article .article-top {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.7rem;
+}
+section .main-content1 article .article-top span {
+  display: block;
+  font-size: 0.25rem;
+  color: #838282;
+  padding-left: 0.8rem;
+  background: url('../images/xiaoxi/u153111_13.jpg') left center no-repeat;
+  background-size: contain;
+}
+section .main-content1 article .article-top p {
+  font-size: 0.3rem;
+  color: #323232;
+  /* margin-top: 0.1rem; */
+}
+section .main-content1 article .article-top a {
+  display: block;
+  width: 0.6rem;
+  background: url('../images/xiaoxi/xiaoxi-dongtai111_03.png') left center
+    no-repeat;
+  background-size: contain;
+}
+/* main-content2 */
+section .main-content2 .search {
+  background-color: #efefef;
+  padding: 0 0.4rem 0.25rem;
+}
+section .main-content2 .search input {
+  outline: none;
+  width: 100%;
+  line-height: 0.6rem;
+  border: none;
+  border-radius: 8px;
+  padding-left: 0.3rem;
+  /* line-height: 0.8rem; */
+}
+section .main-content2 .xiaoxi-container {
+  display: flex;
+  padding: 0.3rem 0 0 0.3rem;
+}
+section .main-content2 .link a {
+  display: flex;
+}
+section .main-content2 .xiaoxi-container img {
+  width: 1rem;
+  /* height: 1rem; */
+  margin-right: 0.4rem;
+}
+section .main-content2 .xiaoxi-container .xiaoxi-text {
+  width: 100%;
+  margin-right: 0.3rem;
+  border-bottom: 2px solid #efefef;
+}
+section .main-content2 .xiaoxi-container p {
+  font-size: 0.2rem;
+  color: #777777;
+  margin: 0.2rem 0 0.3rem;
+}
+section .main-content2 .xiaoxi-container .xiaoxi-text-title {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.3rem;
+  padding: 0.1rem 0 0 0;
+}
+section .main-content2 .xiaoxi-container .xiaoxi-text-title h4 {
+  font-size: 0.3rem;
+  color: #009c7a;
+  display: flex;
+}
+section .main-content2 .xiaoxi-container .xiaoxi-text-title h4 span {
+  display: block;
+  color: white;
+  background-color: #06bf97;
+  border-radius: 4px;
+  font-size: 0.2rem;
+  padding: 0 0.1rem;
+  margin-left: 0.2rem;
+}
+section .main-content2 .xiaoxi-container .xiaoxi-text-title span {
+  color: #cacaca;
+  font-size: 0.2rem;
+  display: block;
+}
+footer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  /* position: fixed;
+  bottom: 0; */
+}
+footer img {
+  width: 0.4rem;
+}
+footer .plus img {
+  width: 0.6rem;
+}
+footer span {
+  display: block;
+}
+
+section .main-content1 article:nth-child(2) .swiper {
+  width: 100%;
+  overflow: hidden;
+}

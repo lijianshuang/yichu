@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>主页</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px'
+    </script>
+    <link rel="stylesheet" href="./css/homepage/homepage.css" />
+    <link rel="stylesheet" href="./css/homepage/iconfont.css" />
+    <link rel="stylesheet" href="./css/homepage/iconfont2.css" />
+    <link rel="stylesheet" href="./css/public.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background-image: url('./images/Login/u48.png');
+        background-size: cover;
+        height: 1.3rem;
+        padding: 0.4rem 0.3rem 0.4rem;
+      }
+      header .time {
+        padding-left: 0.6rem;
+        background: url('./images/Login/sunpng_01.png') no-repeat left center;
+        background-size: 0.5rem;
+        width: 1.5rem;
+      }
+      header .search {
+        width: 0.4rem;
+      }
+      header .search a {
+        /* padding-left: 0.6rem; */
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url('./images/Login/search_04.png') no-repeat left center;
+        background-size: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="warp">
+      <header>
+        <div class="time">
+          <span class="time1"></span>
+          <div>
+            <span class="hour"></span>:
+            <span class="minute"></span>
+          </div>
+        </div>
+        <div class="logo">
+          <h3>一处</h3>
+          <span>ONEPLACE</span>
+        </div>
+        <div class="search">
+          <a href="./search.html" alt=""></a>
+        </div>
+      </header>
+      <section>
+        <div class="main-content">
+          <div class="banner">
+            <img src="./images/Login/homepage/u153_02.jpg" alt="" />
+          </div>
+          <div class="media">
+            <a href="./yinyue.html"
+              ><span class="iconfont icon-yinyue"></span
+            ></a>
+            <a href="#"><span class="iconfont icon-play"></span></a>
+            <a href="./article.html"
+              ><span class="iconfont icon-wenben"></span
+            ></a>
+            <a href="./diantai.html"
+              ><span class="iconfont icon-icon--"></span
+            ></a>
+            <a href="./paihangbang.html"
+              ><span class="iconfont icon-appstorebangdan"></span
+            ></a>
+          </div>
+          <div class="text">
+            <article>
+              <div class="acticle-up">
+                <span>浮世绘</span>
+                <span>一处精选</span>
+              </div>
+              <div class="article-main">
+                <div class="article-text">
+                  <h4>老了又怎么，又不耽误好好活着</h4>
+                  <p>1.《奇葩说》第四季的问题是：“如果你的服务提出和</p>
+                </div>
+                <div class="article-img">
+                  <img src="./images/Login/homepage/acricle1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="arcitle-down">
+                <div>
+                  <span>06-20 20:56</span>
+                </div>
+                <div>
+                  <span class="iconfont icon-chakan"> 123</span>
+                  <span class="iconfont icon-xin"> 22</span>
+                  <span class="iconfont icon-xiaoxi"> 12</span>
+                </div>
+              </div>
+            </article>
+            <article>
+              <a href="./text.html" class="article">
+                <div class="acticle-up">
+                  <span>浮世绘</span>
+                  <span>毛毛</span>
+                </div>
+
+                <div class="article-main">
+                  <div class="article-text">
+                    <h4>我更喜欢努力的自己</h4>
+                    <p>
+                      你知道，故事的结尾并不重要，生活唯一确保我们的就是光芒。
+                    </p>
+                  </div>
+                  <div class="article-img">
+                    <img src="./images/Login/article2.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="arcitle-down">
+                  <div>
+                    <span>06-20 20:56</span>
+                  </div>
+                  <div>
+                    <span class="iconfont icon-chakan"> 123</span>
+                    <span class="iconfont icon-xin"> 22</span>
+                    <span class="iconfont icon-xiaoxi"> 12</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="shouye">
+          <a href="./homepage.html">
+            <img src="./images/Login/shouye_u39_disabled.png" alt="" />
+          </a>
+        </div>
+        <div class="xiaoxi">
+          <a href="./xiaoxi.html">
+            <img src="./images/Login/xiaoxi_u45.png" alt="" />
+          </a>
+        </div>
+        <div class="plus">
+          <a href="./xinjian.html">
+            <img src="./images/Login/xinjian_u37.png" alt="" />
+          </a>
+        </div>
+        <div class="huati">
+          <a href="./huati.html">
+            <img src="./images/Login/huati_u41.png" alt="" />
+          </a>
+        </div>
+        <div class="wode">
+          <a href="./mine.html">
+            <img src="./images/Login/wode_u43.png" alt="" />
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script>
+      function time() {
+        var date = new Date()
+        var hour = date.getHours()
+        var min = date.getMinutes()
+        if (hour < 10) {
+          hour = '0' + hour
+        }
+        $('.time .hour').text(hour)
+        if (min < 10) {
+          min = '0' + min
+        }
+        $('.time .minute').text(min)
+        if (hour <= 12) {
+          $('.time .time1').text('上午')
+        } else $('.time1').text('下午')
+      }
+      time()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.warp {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  flex-shrink: 0;
+  background-image: url('../images/Login/u48.png');
+  background-size: cover;
+  height: 1.3rem;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem 0;
+  position: relative;
+}
+header a {
+  margin-left: 0.3rem;
+  color: #059979;
+  position: absolute;
+}
+header a span.iconfont {
+  font-size: 0.4rem;
+  display: block;
+}
+header h3 {
+  color: #049979;
+  font-size: 0.35rem;
+  font-weight: 300;
+  margin-left: 1.2rem;
+  /* position: absolute; */
+}
+header span {
+  font-size: 0.35rem;
+  color: #049a77;
+  margin-right: 0.3rem;
+  /* line-height: 0.3rem; */
+  display: block;
+  /* line-height: 0.3rem; */
+  padding-bottom: 0.5rem;
+}
+header span:nth-child(3) {
+  border-bottom: 2px solid #049a77;
+}
+section {
+  overflow: scroll;
+  flex-grow: 1;
+}
+section .main-content {
+  background-color: #f5f5f5;
+}
+section article {
+  padding: 0.4rem 0.3rem 0.2rem 0.2rem;
+  width: 100%;
+}
+section article .article-up {
+  display: flex;
+  justify-content: flex-start;
+}
+section article .article-up img {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin-right: 0.1rem;
+}
+section article .article-up .name {
+  padding: 0.2rem 0;
+  /* margin-top: 0.2rem; */
+}
+section article .article-up .name h4 {
+  font-size: 0.2rem;
+  color: #202020;
+  /* display: block; */
+}
+section article .article-up .name span {
+  font-size: 0.15rem;
+  display: block;
+  color: #b2b2b2;
+}
+section article .text {
+  /* display: flex; */
+  /* justify-content: space-around; */
+  background-color: #fff;
+  margin-left: 0.5rem;
+  border-radius: 15px;
+  margin-top: 0.2rem;
+  background-image: url('../images/yinyue/share_03.jpg');
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+section article .text .text-left {
+  /* width: 4rem; */
+  padding: 1rem 0 1rem 0.4rem;
+}
+section article .text h3 {
+  color: #202020;
+  font-size: 0.3rem;
+  margin-bottom: 0.1rem;
+}
+section article .text p {
+  font-size: 0.25rem;
+  color: #6b6b6b;
+}
+section article .text img {
+  /* width: 2.5rem; */
+  width: 2rem;
+  /* height: 100%; */
+}
+section article .arcitle-down {
+  margin-left: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0.2rem;
+}
+section article .arcitle-down span.iconfont {
+  display: block;
+  font-size: 0.12rem;
+  color: #a1a1a1;
+  margin-right: 0.2rem;
+}

@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.warp {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  flex-shrink: 0;
+  background-image: url('../images/Login/u48.png');
+  background-size: cover;
+  height: 1.3rem;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 0.5rem;
+  position: relative;
+}
+header > a:first-child {
+  /* margin-left: 0.3rem; */
+  color: #059979;
+  position: absolute;
+  left: 0.3rem;
+  /* right:0; */
+}
+header > a:first-child span.iconfont {
+  font-size: 0.4rem;
+  display: block;
+}
+header h3 {
+  color: #029b7c;
+  font-size: 0.35rem;
+  font-weight: 300;
+  margin: 0 auto;
+  text-align: center;
+  /* position: absolute; */
+  line-height: 0.5rem;
+}
+header > a:last-child {
+  font-size: 0.25rem;
+  color: #11b998;
+  /* margin-right: 0.3rem; */
+  position: absolute;
+  line-height: 0.5rem;
+  right: 0.3rem;
+}
+section {
+  overflow: scroll;
+  flex-grow: 1;
+  /* padding: 0.4rem; */
+}
+
+section img {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.2rem;
+}
+section p {
+  text-align: center;
+  color: #ffd801;
+  font-size: 0.8rem;
+}
+section .main-content > div {
+  width: 100%;
+  line-height: 1rem;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #c5c6c0;
+}
+section .main-content > div:nth-child(3) {
+  background-color: #35eecc;
+  color: #fff;
+  margin-top: 0.3rem;
+}
+
+footer {
+  flex-shrink: 0;
+  line-height: 0.5rem;
+  display: flex;
+  /* justify-content: space-around; */
+  flex-direction: column;
+  padding: 0.3rem 0;
+  padding: 0.3rem 0.5rem;
+  background-color: #f5f5f5;
+  height: 4.8rem;
+}
+footer p {
+  font-size: 0.25rem;
+  color: #a1a1a1;
+  text-align: center;
+}
+footer .copyright > div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.2rem;
+  font-size: 0.1rem;
+  padding: 0 1.5rem;
+  color: #c0c0c0;
+  line-height: 20px;
+}
+footer .copyright > div span {
+  display: block;
+}
+footer .copyright > div > div {
+  width: 1px;
+  background-color: #c9c9c9;
+}
+footer .copyright p {
+  font-size: 0.1rem;
+  text-align: center;
+  color: #c0c0c0;
+}
+footer input {
+  display: block;
+  width: 5rem;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  outline: none;
+  padding: 0.2rem 0 0.2rem 0.3rem;
+}
+footer a {
+  display: block;
+  font-size: 0.3rem;
+  background-color: none;
+  line-height: 0.5rem;
+  border: 0;
+  color: #009b79;
+  margin-right: 0.5rem;
+}
+
+.warp2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+  /* position: relative; */
+}
+.warp2.show {
+  display: none;
+}
+.warp2 .warp2-content {
+  width: 6rem;
+  height: 4rem;
+  border-radius: 8px;
+  background-color: #fff;
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  margin-left: -3rem;
+  display: flex;
+  flex-direction: column;
+}
+.warp2 .warp2-content .w2c-top {
+  font-size: 0.3rem;
+  text-align: center;
+  line-height: 1rem;
+  color: #fff;
+  background-color: #35efcc;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.warp2 .warp2-content input {
+  margin: 0.5rem;
+  outline: none;
+  border: 0;
+  line-height: 1rem;
+  font-size: 0.6rem;
+  text-align: center;
+}
+input::-webkit-input-placeholder {
+  /* placeholder颜色  */
+  color: #35efcc;
+  /* placeholder字体大小  */
+  /* font-size: 12px; */
+  /* placeholder位置  */
+  text-align: center;
+}
+.warp2 .warp2-content a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 0.3rem;
+  line-height: 0.6rem;
+  color: #5bf2d6;
+}

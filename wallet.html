@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>wallet</title>
+    <link rel="stylesheet" href="./css/wallet.css" />
+    <link rel="stylesheet" href="./css/iconfont-back.css" />
+    <link rel="stylesheet" href="./css/iconfont-wallet.css" />
+    <link rel="stylesheet" href="./css/public.css" />
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px'
+    </script>
+  </head>
+
+  <body>
+    <div class="warp ">
+      <header>
+        <a href="./mine.html"><span class="iconfont icon-huitui"></span></a>
+        <h3>钱包</h3>
+        <a class="del" href="#">明细</a>
+      </header>
+      <section>
+        <div class="main-content">
+          <img src="./images/wallet_03.jpg" alt="" />
+          <p>￥<span>0:00</span>元</p>
+          <div class="add  del ">
+            <span class="iconfont icon-chongzhi"> 充值</span>
+          </div>
+          <div class="sub">
+            <span class="iconfont icon-tixian">提现</span>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>零钱可以用来用户用户间收听回答或者购买实体商品.</br>在使用过程中，一处 不会收取任何费用</p>
+        <div class="copyright">
+          <div>
+            <span>红包活动</span>
+            <div></div>
+            <span>常见问题</span>
+          </div>
+          <p>本服务由财付通提供底层技术支持</p>
+        </div>
+      </footer>
+    </div>
+    <div class="warp2 show">
+      <div class="warp2-content">
+        <div class="w2c-top">
+          请输入您要充值的金额(元)
+        </div>
+        <input type="text" placeholder="50">
+        <a href="#">确定</a>
+      </div>
+    </div>
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/zepto.touch.js"></script>
+    <script>
+      
+      $('.warp .del').tap(function() {
+        $('.warp2').removeClass('show')
+      })
+      $('.warp2 footer>.cancel').tap(function() {
+        $('.warp2').addClass('show')
+      })
+
+      // $('.warp2-content  a').tap(function () {
+      //     var text = $('.warp2-content  input').val()
+      //     if(text.trim()) {
+
+      //     }     
+      //   })
+
+    </script>
+  </body>
+</html>

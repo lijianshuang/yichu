@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>search</title>
+    <link rel="stylesheet" href="./css/search.css" />
+    <link rel="stylesheet" href="./css/iconfont-search.css" />
+    <link rel="stylesheet" href="./css/public.css" />
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px'
+    </script>
+  </head>
+  <body>
+    <div class="warp">
+      <header>
+        <input type="text" placeholder="所搜问答、文章、话题或用户" />
+        <a href="./homepage.html" class="cansel">取消</a>
+      </header>
+      <section><a href="#">内容</a><a href="#">用户</a></section>
+      <footer>
+        <div class="contain">
+          <h4><span class="iconfont icon-lishijilu"></span>最近浏览</h4>
+          <ul>
+            <li><span class="iconfont icon-sousuo"></span>浮世绘</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/zepto.touch.js"></script>
+    <script>
+      $('input').keydown(function(event) {
+        var text = $(this).val()
+
+        var num = event.which
+        if (num === 13) {
+          if (text.trim()) {
+            var li = $('<li>')
+            li.html(`<span class="iconfont icon-sousuo"></span>${text}`)
+            li.appendTo('ul')
+            $('input').val('')
+          }
+        }
+      })
+    </script>
+  </body>
+</html>

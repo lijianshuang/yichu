@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.warp {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex-shrink: 0;
+  background-image: url('../images/Login/u48.png');
+  background-size: cover;
+  height: 1.3rem;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 0.5rem;
+  position: relative;
+}
+header a {
+  margin-left: 0.3rem;
+  color: #059979;
+  position: absolute;
+}
+header a span.iconfont {
+  font-size: 0.4rem;
+  display: block;
+}
+header h3 {
+  color: #049979;
+  font-size: 0.35rem;
+  font-weight: 300;
+  margin: 0 auto;
+  /* position: absolute; */
+}
+section {
+  overflow: scroll;
+  flex-grow: 1;
+}
+footer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  /* position: fixed;
+  bottom: 0; */
+}
+footer img {
+  width: 0.4rem;
+}
+footer .plus img {
+  width: 0.6rem;
+}
+
+section {
+  overflow: scroll;
+  flex-grow: 1;
+}
+
+section .main-content .fenlei {
+  margin-top: 0.15rem;
+}
+section .main-content .title {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.3rem;
+  color: #059979;
+  /* padding-bottom: 0.4rem; */
+  padding: 0.3rem;
+}
+section .main-content .title > span {
+  display: block;
+  font-size: 0.25rem;
+  padding-left: 0.3rem;
+  border-left: 1px solid #059979;
+}
+section .main-content .title > a {
+  font-size: 0.5rem;
+  color: #059979;
+}
+section .main-content .fenlei-content {
+  width: 100%;
+  overflow: hidden;
+}
+section .main-content .fenlei-content .fenlei-pic {
+  margin-left: -0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+section .main-content .fenlei-content .fenlei-pic a {
+  display: block;
+  margin-left: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+section .main-content .fenlei-content .fenlei-pic img {
+  display: block;
+  width: 2.43rem;
+}
+section .main-content .remenwenzhang {
+  padding-top: 0.3rem;
+}
+section .main-content .remenwenzhang article {
+  padding: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+section .main-content .remenwenzhang article img {
+  width: 2rem;
+}
+section .main-content .remenwenzhang article .article-right {
+  margin-left: 0.2rem;
+  width: 5rem;
+}
+section .main-content .remenwenzhang article h3 {
+  font-size: 0.3rem;
+  color: #202020;
+  margin-bottom: 0.3rem;
+}
+section .main-content .remenwenzhang article p {
+  font-size: 0.2rem;
+  color: #6e6a6a;
+}
+section .main-content .remenwenzhang article .share {
+  width: 100%;
+  text-align: right;
+}
+section .main-content .remenwenzhang article .share span.iconfont {
+  font-size: 0.15rem;
+  color: #b2b2b2;
+}
+section .main-content .kongbai {
+  width: 100%;
+  height: 0.3rem;
+  background-color: #f5f5f5;
+}

@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.warp {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  flex-shrink: 0;
+  background-image: url('../images/Login/u48.png');
+  background-size: cover;
+  height: 1.3rem;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 0.5rem;
+  position: relative;
+}
+header a {
+  margin-left: 0.3rem;
+  color: #059979;
+  position: absolute;
+}
+header a span.iconfont {
+  font-size: 0.4rem;
+  display: block;
+}
+header h3 {
+  color: #049979;
+  font-size: 0.38rem;
+  font-weight: 300;
+  margin: 0 auto;
+  /* position: absolute; */
+}
+section {
+  overflow: scroll;
+  flex-grow: 1;
+}
+section .main-content {
+  background-color: #f5f5f5;
+}
+section .main-content > div {
+  padding: 0.4rem;
+  background-color: #fff;
+  margin-bottom: 0.3rem;
+}
+section .main-content .title {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.3rem;
+  color: #059979;
+  padding-bottom: 0.4rem;
+}
+section .main-content .title > span {
+  display: block;
+  font-size: 0.25rem;
+  padding-left: 0.3rem;
+  border-left: 1px solid #059979;
+}
+section .main-content .title > a {
+  font-size: 0.5rem;
+  color: #059979;
+}
+section .main-content .yinyuepindao-down,
+section .main-content .remenfenxiang-down {
+  width: 100%;
+  overflow: hidden;
+}
+section .main-content .yinyuepindao-down .swiper-wrapper {
+  width: 8.3rem;
+}
+section .main-content .yinyuepindao-down .swiper-wrapper img,
+section .main-content .remenfenxiang-down .swiper-wrapper img {
+  display: block;
+  /* width: 2.7rem; */
+  width: 100%;
+}
+section .main-content .yinyuepindao-down .swiper-wrapper img:first-child {
+  margin-bottom: 0.1rem;
+}
+/* section .main-content .remenfenxiang h4 {
+  font-size: 0.2rem;
+  text-align: center;
+} */
+.swiper-slide {
+  /* text-align: center;
+  font-size: 18px;
+  background: #fff; */
+
+  /* Center slide text vertically */
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column; */
+}
+
+/* section .main-content .yinyuepindao-pic {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: -0.2rem;
+  width: 8.7rem;
+} */
+/*   */
+
+section .main-content .remenfenxiang {
+  padding-bottom: 0.3rem;
+}
+/* section .main-content .remenfenxiang-down {
+  display: flex;
+  justify-content: space-between;
+} */
+/* section .main-content .remenfenxiang-pic {
+  display: flex;
+  justify-content: space-between; */
+/* flex-wrap: wrap; */
+/* margin-left: -0.2rem;
+  width: 8.7rem;
+} */
+/* section .main-content .remenfenxiang-down .remenfenxiang-pic > div {
+  margin-left: 0.2rem;
+} */
+/* section .main-content .remenfenxiang-down img {
+  width: 2.5rem;
+} */
+section .main-content .remenfenxiang-down h4 {
+  font-size: 0.1rem;
+  text-align: center;
+  color: #202020;
+  margin-bottom: 0.15rem;
+}
+section .main-content .remenfenxiang-down p {
+  font-size: 0.2rem;
+  text-align: center;
+  color: #6b6b6b;
+}
+/* section .main-content .zazhi .title{
+
+} */
+section .main-content .zazhi-down {
+  overflow: hidden;
+  width: 100%;
+}
+section .main-content .zazhi-down .zazhi-pic {
+  display: flex;
+  justify-content: flex-start;
+  /* flex-wrap: wrap; */
+  margin-left: -0.2rem;
+}
+section .main-content .zazhi-down .zazhi-pic img {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: 0.2rem;
+}
