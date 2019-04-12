@@ -131,6 +131,20 @@
         line-height: 1rem;
         font-size: 0.5rem;
       }
+
+      section .user,
+      section .password {
+        position: relative;
+      }
+      .warn1,
+      .warn2 {
+        position: absolute;
+        font-size: 0.15rem;
+        color: #e4f4f4;
+        top: 0.4rem;
+        left: 0.5rem;
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -143,13 +157,15 @@
         <div class="user">
           <span class="iconfont icon-user"></span>
           <input type="text" id="user" placeholder="请输入邮箱地址/手机号" />
+          <p class="warn1">6-18位字母数字下划线组成的账号</p>
         </div>
         <div class="password">
           <span class="iconfont icon-password"></span>
-          <input type="text" id="password" placeholder="请输入密码" />
+          <input type="password" id="password" placeholder="请输入密码" />
+          <p class="warn2">请输入正确密码</p>
         </div>
         <div>
-          <a href="./homepage.html">登录</a>
+          <a class="login" href="#">登录</a>
         </div>
         <a href="#">用户注册</a>
       </section>
@@ -160,6 +176,89 @@
 
         <a href="#"><span class="iconfont icon-qq"></span></a>
       </footer>
+      <script src="./js/zepto.min.js"></script>
+      <script src="./js/zepto.touch.js"></script>
+      <script>
+        var currentNum = ''
+        var currentPassword = ''
+        var re1 = /\W/
+        //有非字母数字下划线
+        var re2 = /^(\W|[0-9])/
+        // /^[A-Za-z]一位英文字母
+        var re3 = /^([\S])\1{5,15}$/
+        //  \S 匹配一个非空白符   \1 与前一位相同  所以此正则为 5-15位相同字符
+        $('.user>input').focus(function() {
+          $('.warn1').css('display', 'block')
+        })
+
+        $('.user>input').blur(function() {
+          $('.warn1').css('display', 'none')
+          var str = $(this).val() //检验内容
+          var len = str.length //检验长度
+          if (str.trim()) {
+            if (re1.test(str)) {
+              $('.warn1')
+                .text('应由字母数字下划线组成')
+                .css('color', 'crimson')
+                .css('display', 'block')
+            } else if (len < 6 || len > 16) {
+              $('.warn1')
+                .text('应由6-18字符组成')
+                .css('color', 'crimson')
+                .css('display', 'block')
+            } else if (re2.test(str)) {
+              $('.warn1')
+                .text('需由字母开头')
+                .css('color', 'crimson')
+                .css('display', 'block')
+            } else {
+              $('.warn1')
+                .text('账号填写完成')
+                .css('color', 'green')
+                .css('display', 'block')
+              currentNum = str
+            }
+          }
+        })
+
+        $('.password>input').focus(function() {
+          $('.warn2').css('display', 'block')
+        })
+        $('.password>input').blur(function() {
+          $('.warn2').css('display', 'none')
+          var str = $(this).val() //检验内容
+          var len = str.length //检验长度
+          if (str.trim()) {
+            if (len < 6 || len > 16) {
+              $('.warn2')
+                .text('密码错误，请再次输入')
+                .css('color', 'crimson')
+                .css('display', 'block')
+            } else {
+              $('.warn2')
+                .text('密码填写完成')
+                .css('color', 'green')
+                .css('display', 'block')
+              currentPassword = str
+            }
+          }
+        })
+        $('.login').tap(function() {
+          if (currentPassword && currentNum) {
+            location.href = './homepage.html'
+          } else if (!currentNum) {
+            $('.warn1')
+              .text('请输入账号')
+              .css('color', 'crimson')
+              .css('display', 'block')
+          } else if (!currentPassword) {
+            $('.warn2')
+              .text('请输入密码')
+              .css('color', 'crimson')
+              .css('display', 'block')
+          }
+        })
+      </script>
     </div>
   </body>
 </html>

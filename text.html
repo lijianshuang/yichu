@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/text.css" />
     <link rel="stylesheet" href="./css/iconfont-text.css" />
     <link rel="stylesheet" href="./css/public.css" />
+    <link rel="stylesheet" href="./css/iconfont-heart.css" />
     <script>
       document.documentElement.style.fontSize =
         document.documentElement.clientWidth / 7.5 + 'px'
@@ -19,7 +20,8 @@
         <a href="./homepage.html">
           <span class="iconfont icon-huitui"></span
         ></a>
-        <a href="#">关注</a>
+        <a href="#" class="btn-h1">+关注</a>
+        <a href="#" class="btn-h2 focus">已关注</a>
         <div>
           <img src="./images/yuanzhuao6_03.jpg" alt="" />
           <h4>毛毛</h4>
@@ -45,14 +47,43 @@
         </div>
       </section>
       <footer>
-        <span
-          class="iconfont 
-        icon-xihuan"
-          >71</span
-        >
+        <div>
+          <span
+            class="iconfont 
+        icon-xihuan btn-f1"
+            >71</span
+          >
+          <span
+            class="iconfont 
+                icon-heart btn-f2 show"
+            >已关注</span
+          >
+        </div>
+
         <span class="iconfont icon-fankui"> 63</span>
         <span class="iconfont icon-zhuanfa"> 57</span>
       </footer>
     </div>
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/zepto.touch.js"></script>
+    <script>
+      $('.btn-h1').tap(function() {
+        $(this).addClass('focus')
+        $('.btn-h2').removeClass('focus')
+      })
+      $('.btn-h2').tap(function() {
+        $(this).addClass('focus')
+        $('.btn-h1').removeClass('focus')
+      })
+
+      $('.btn-f1').tap(function() {
+        $(this).addClass('show')
+        $('.btn-f2').removeClass('show')
+      })
+      $('.btn-f2').tap(function() {
+        $(this).addClass('show')
+        $('.btn-f1').removeClass('show')
+      })
+    </script>
   </body>
 </html>

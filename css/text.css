@@ -46,7 +46,26 @@ header a:nth-child(2) {
   color: #fff;
   border-radius: 15px;
   line-height: 0.3rem;
+  z-index: 2;
 }
+header a:nth-child(3) {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.3rem;
+  padding: 3px 8px;
+  display: block;
+  font-size: 0.1rem;
+  border: 1px solid #40a395;
+  color: #fff;
+  border-radius: 15px;
+  line-height: 0.3rem;
+  z-index: 2;
+}
+header a.focus {
+  display: none;
+  z-index: 0;
+}
+
 header > div {
   position: absolute;
   right: 0.3rem;
@@ -102,7 +121,22 @@ footer {
   justify-content: space-between;
   padding: 0.3rem;
 }
-footer span.iconfont {
+footer > span.iconfont {
   font-size: 0.35rem;
   color: #58bba5;
+  width: 1.4rem;
+  text-align: center;
+}
+footer > div {
+  position: relative;
+  width: 1.4rem;
+}
+footer > div > span.iconfont {
+  position: absolute;
+  font-size: 0.35rem;
+  color: #58bba5;
+}
+footer > div .show {
+  display: none;
+  z-index: 0;
 }

@@ -25,7 +25,7 @@
       <section>
         <div class="main-content">
           <img src="./images/wallet_03.jpg" alt="" />
-          <p>￥<span>0:00</span>元</p>
+          <p>￥<span class="money">0:00</span>元</p>
           <div class="add  del ">
             <span class="iconfont icon-chongzhi"> 充值</span>
           </div>
@@ -51,8 +51,8 @@
         <div class="w2c-top">
           请输入您要充值的金额(元)
         </div>
-        <input type="text" placeholder="50">
-        <a href="#">确定</a>
+        <input type="text" placeholder="50" class='recharge' > 
+        <a href="#" class='btn'>确定</a>
       </div>
     </div>
     <script src="./js/zepto.min.js"></script>
@@ -66,12 +66,22 @@
         $('.warp2').addClass('show')
       })
 
-      // $('.warp2-content  a').tap(function () {
-      //     var text = $('.warp2-content  input').val()
-      //     if(text.trim()) {
+      $('.btn').tap(function(){
+        // console.log(1);
+        var str = $('.recharge').val()
+        var re1 = /\D/ //有数字
 
-      //     }     
-      //   })
+        if(str){
+          if(re1.test(str)){
+            $('.w2c-top').text('请输入金额').css('color',"yellow")
+          }
+        }
+        else
+        {str = 50} 
+        
+        $('.warp2').addClass('show')
+        $('.money').text(str.toFixed(2))
+      })
 
     </script>
   </body>

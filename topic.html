@@ -31,7 +31,8 @@
                 <span>不想上班的理由？</span>
                 <span>还有 1 周结束</span>
               </div>
-              <div>关注</div>
+              <a href="#" class="btn-h1">+关注</a>
+              <a href="#" class="btn-h2 focus">已关注</a>
             </div>
             <p>
               许多人都处于这种情况：不喜欢现在的工作，每天过得不开心，但又能怎么样呢？生活要继续，班还不是要上，循环往复，最后难免对工作这件
@@ -192,6 +193,14 @@
     <script src="./js/zepto.min.js"></script>
     <script src="./js/zepto.touch.js"></script>
     <script>
+      $('.btn-h1').tap(function () {
+          $(this).addClass('focus')
+          $('.btn-h2').removeClass('focus')
+        })
+        $('.btn-h2').tap(function () {
+          $(this).addClass('focus')
+          $('.btn-h1').removeClass('focus')
+        })
 
       $('.btn11').tap(function(){
         $(this).addClass('line').siblings().removeClass('line')
